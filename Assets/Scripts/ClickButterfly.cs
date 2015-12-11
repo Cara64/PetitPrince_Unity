@@ -3,11 +3,8 @@ using System.Collections;
 
 public class ClickButterfly : MonoBehaviour
 {
-    GameObject player = GameObject.FindGameObjectWithTag("Player");
-    GameObject butterfly = GameObject.FindGameObjectWithTag("Butterfly");
-    void Start()
+    void OnClick()
     {
-        butterfly.AddComponent<FixedJoint>();
-        butterfly.GetComponent<FixedJoint>().connectedBody = player.GetComponent<Rigidbody>();
+        
     }
 }
