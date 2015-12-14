@@ -151,4 +151,18 @@ public class PlanetController : MonoBehaviour {
     {
         habitants.Remove(agent);
     }
+
+    void OnTriggerEnter(Collider other)
+    {
+        //if (other.tag == "Player")
+        //{
+        //    GameObject.Find("Main Camera").transform.LookAt(other.transform);
+        //}
+    }
+
+    void OnTriggerExit(Collider other)
+    {
+        //GameObject butterfly = GameObject.Find("Butterfly");
+        //GameObject.Find("Main Camera").transform.LookAt(butterfly.transform);
+    }
 }
